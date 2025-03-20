@@ -1,5 +1,7 @@
 # raycast-backend-api
 
+Accessing the Raycast backend API delightfully.
+
 ## Install
 
 ```shell

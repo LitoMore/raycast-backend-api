@@ -1,7 +1,7 @@
 {
 	"name": "raycast-backend-api",
 	"version": "0.1.1",
-	"description": "Raycast backend API",
+	"description": "Accessing the Raycast backend API delightfully.",
 	"repository": "https://github.com/LitoMore/raycast-backend-api",
 	"type": "module",
 	"exports": "./distribution/index.js",
