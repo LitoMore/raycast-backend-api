@@ -151,7 +151,7 @@ export type AiModel = {
 	model: string;
 	provider: string;
 	provider_name: string;
-	provider_branch: string;
+	provider_brand: string;
 	availability: string;
 	speed: number;
 	intelligence: number;
