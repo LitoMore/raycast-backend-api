@@ -21,7 +21,7 @@ const models = await api.aiModels();
 
 ### Constructor Options
 
-- `token`: The Bearer token for the authorization header. Defaults to the token in your Raycast config. You can pass in an empty to omit it from the authorization header.
+- `token`: The Bearer token for the authorization header. Defaults to the token in your Raycast config. You can pass in an empty string to omit it from the authorization header.
 - `apiEndpoint`: The API endpoint. Defaults to `https://backend.raycast.com/api/v1/`.
 - `configPath`: The path to your Raycast config file. Defaults to `~/.config/raycast/config.json`.
 
