@@ -1,6 +1,6 @@
 {
 	"name": "raycast-backend-api",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Raycast backend API",
 	"repository": "https://github.com/LitoMore/raycast-backend-api",
 	"type": "module",
