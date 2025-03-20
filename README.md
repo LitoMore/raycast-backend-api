@@ -15,7 +15,6 @@ import RaycastApi from "raycsat-backend-api";
 
 const api = new RaycastApi();
 
-// Built-in API methods
 const me = await api.me();
 const models = await api.aiModels();
 ```
