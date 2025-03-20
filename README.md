@@ -16,26 +16,6 @@ const api = new RaycastApi();
 // Built-in API methods
 const me = await api.me();
 const models = await api.aiModels();
-
-// Request any URI
-const custom = await api.client
-	.post("custom/uri", {
-		json: {
-			foo: "bar",
-		},
-	})
-	.json<YourResponseTypeHere>();
-```
-
-You can also customize the target procotol and API endpoint for some advanced usages:
-
-```ts
-import RaycastAPI from "raycast-backend-api";
-
-const api = new RaycastApi({
-	token: "", // Set an empty string to omit the authorization header
-	apiEndpoint: "http://localhost:8000/api/v1/",
-});
 ```
 
 ### Constructor Options
@@ -49,8 +29,6 @@ const api = new RaycastApi({
 > [!CAUTION]\
 > All APIs are subject to change by Raycast. You should handle errors in your code usage.
 
-### Constructor
-
 ### api.me()
 
 Get current user's information.
@@ -62,6 +40,28 @@ Returns a `Promise<Me>`.
 Get all AI models.
 
 Returns a `Promise<AiModels>`.
+
+### api.client
+
+The [extended instance](https://github.com/sindresorhus/got/blob/main/documentation/10-instances.md#gotextendoptions-instances) of the API. It can be used for customizing the request.
+
+```ts
+import RaycastAPI from "raycast-backend-api";
+
+const api = new RaycastApi({
+	token: "", // Set an empty string to omit the authorization header
+	apiEndpoint: "http://localhost:8000/api/v1/",
+});
+
+// Request any URI
+const custom = await api.client
+	.post("custom/uri", {
+		json: {
+			foo: "bar",
+		},
+	})
+	.json<YourResponseTypeHere>();
+```
 
 ## License
 
