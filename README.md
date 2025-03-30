@@ -42,28 +42,6 @@ Get all AI models.
 
 Returns a `Promise<AiModels>`.
 
-### api.client
-
-The [extended instance](https://github.com/sindresorhus/got/blob/main/documentation/10-instances.md#gotextendoptions-instances) of the API. It can be used for customizing the request.
-
-```ts
-import RaycastAPI from "raycast-backend-api";
-
-const api = new RaycastApi({
-	token: "", // Set an empty string to omit the authorization header
-	apiEndpoint: "http://localhost:8000/api/v1/",
-});
-
-// Request any URI
-const custom = await api.client
-	.post("custom/uri", {
-		json: {
-			foo: "bar",
-		},
-	})
-	.json<YourResponseTypeHere>();
-```
-
 ## License
 
 MIT
