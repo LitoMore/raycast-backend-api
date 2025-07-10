@@ -1,6 +1,7 @@
 export type RaycastConfig = {
 	accessToken?: string;
 	token?: string;
+	Token?: string;
 };
 
 export type Me = {

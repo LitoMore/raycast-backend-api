@@ -24,12 +24,12 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^7.0.0",
-		"@types/node": "^22.13.10",
+		"@types/node": "^24.0.12",
 		"del-cli": "^6.0.0",
-		"typescript": "^5.8.2",
-		"xo": "^0.60.0"
+		"typescript": "^5.8.3",
+		"xo": "^1.1.1"
 	},
 	"dependencies": {
-		"got": "^14.4.6"
+		"got": "^14.4.7"
 	}
 }

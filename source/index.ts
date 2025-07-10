@@ -1,8 +1,8 @@
-import got, {Got} from 'got';
-import {AiModels, Me} from './types.js';
+import got, {type Got} from 'got';
+import type {AiModels, Me} from './types.js';
 import {readRaycastToken} from './utils.js';
 
-export * from './types.js';
+export type * from './types.js';
 
 export type RaycastApiOptions = {
 	token?: string;
@@ -18,7 +18,7 @@ export default class RaycastApi {
 
 	constructor(options?: RaycastApiOptions) {
 		this.apiEndpoint = new URL(
-			options?.apiEndpoint ?? `https://backend.raycast.com/api/v1/`,
+			options?.apiEndpoint ?? 'https://backend.raycast.com/api/v1/',
 		);
 		this.token = options?.token ?? readRaycastToken(this.configPath);
 		this.client = got.extend({
